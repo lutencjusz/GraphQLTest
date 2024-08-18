@@ -1,0 +1,14 @@
+type Car {
+    id: ID!,
+    mark: String,
+    model: String
+}
+
+type Query {
+    cars: [Car]
+    carById(id: ID!): Car
+}
+
+type Mutation {
+    createCar(mark: String, model: String): Car
+}
